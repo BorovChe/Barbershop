@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbershop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="">
+          <svg class="header-logo" width="69" height="56">
+            <use href="./images/icons/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li><a class="header-nav-link" href="">About</a></li>
+            <li><a class="header-nav-link" href="">Services and prices</a></li>
+            <li><a class="header-nav-link" href="">Barbers</a></li>
+            <li><a class="header-nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a class="header-contacts-link" href="tel:+380441111111"> +38 044 111 11 11 </a>
+          <button class="btn header-contacts-btn" type="button">Online-booking</button>
+        </div>
+        <button class="btn-menu">
+          <svg class="header-logo" width="24" height="16">
+            <use href="./images/icons/sprite.svg#burgerMenu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-block-left">
+          <a href="">Instagram</a>
+          <a href="">Youtube</a>
+        </div>
+        <div class="hero-block-right">
+          <p class="uppertitle">A hair salon for men in Kyiv</p>
+          <h1>BarberShop</h1>
+          <p>
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <ul>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/benefits/benefits_desc@1x.webp 1x,
+                ./images/benefits/benefits_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/benefits/benefits_desc@1x.jpg 1x,
+                ./images/benefits/benefits_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/benefits/benefits_tab@1x.webp 1x,
+                ./images/benefits/benefits_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/benefits/benefits_tab@1x.jpg 1x,
+                ./images/benefits/benefits_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/benefits/benefits_desc@1x.jpg"
+              alt="benefits photo 1"
+              width="270px"
+              height="445px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px )"
+              srcset="
+                ./images/benefits/benefits2_desc@1x.webp 1x,
+                ./images/benefits/benefits2_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/benefits/benefits2_desc@1x.jpg 1x,
+                ./images/benefits/benefits2_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/benefits/benefits2_tab@1x.webp 1x,
+                ./images/benefits/benefits2_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/benefits/benefits2_tab@1x.jpg 1x,
+                ./images/benefits/benefits2_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/benefits/benefits2_desc@1x.jpg"
+              alt="benefits photo 2"
+              width="270px"
+              height="445px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <div>
+          <span>About</span>
+          <h2>Best Barbershop in your city</h2>
+          <p>
+            If you want to add more confidence to your image, you should visit
+            us
+          </p>
+          <p>
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button>online-booking</button>
+        </div>
+      </ul>
+    </section>
+    <section>
+      <span>Spend your time with the best masters</span>
+      <h2>Services and prices</h2>
+      <ul>
+        <li>Men’s haircut</li>
+        <li>Beard trim</li>
+        <li>Mustache trim</li>
+        <li>Straight razor shave</li>
+        <li>Trainee’s haircut</li>
+        <li>Haircut under the nozzle</li>
+        <li>Children’s haircut (0-12 y.o.)</li>
+        <li>Camouflage of grey hair</li>
+      </ul>
+      <button>online-booking</button>
+    </section>
+    <section>
+      <span>Old traditional school</span>
+      <h2>¿Why people come to us?</h2>
+      <p>
+        Only good things are said about us. But it's better to see and feel 1
+        time than read 10 times.
+      </p>
+      <ul>
+        <li>Satisfied customers per day</li>
+        <li>Awards for excellent service</li>
+        <li>Kyiv’s best barbers</li>
+        <li>Gifts for regular customers</li>
+      </ul>
+    </section>
+    <section>
+      <span>For true enjoyers of the atmosphere</span>
+      <h2>Our barbers</h2>
+      <ul>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers_desc@1x.webp 1x,
+                ./images/barbers/barbers_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers_desc@1x.jpg 1x,
+                ./images/barbers/barbers_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers_tab@1x.webp 1x,
+                ./images/barbers/barbers_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers_tab@1x.jpg 1x,
+                ./images/barbers/barbers_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers_mob@1x.webp 1x,
+                ./images/barbers/barbers_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers_mob@1x.jpg 1x,
+                ./images/barbers/barbers_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/barbers/barbers_tab@1x.jpg"
+              alt="John Smith"
+              width="450px"
+              height="346px"
+              loading="lazy"
+            />
+          </picture>
+
+          <h3>John Smith</h3>
+
+          <span>Extreme Barber</span>
+          <ul>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+          </ul>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers2_desc@1x.webp 1x,
+                ./images/barbers/barbers2_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers2_desc@1x.jpg 1x,
+                ./images/barbers/barbers2_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers2_tab@1x.webp 1x,
+                ./images/barbers/barbers2_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers2_tab@1x.jpg 1x,
+                ./images/barbers/barbers2_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers2_mob@1x.webp 1x,
+                ./images/barbers/barbers2_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers2_mob@1x.jpg 1x,
+                ./images/barbers/barbers2_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/barbers/barbers2_tab@1x.jpg"
+              alt="Michele Doe"
+              width="450px"
+              height="346px"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Michele Doe</h3>
+          <span>Extreme Barber</span>
+          <ul>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+          </ul>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers3_desc@1x.webp 1x,
+                ./images/barbers/barbers3_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/barbers/barbers3_desc@1x.jpg 1x,
+                ./images/barbers/barbers3_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers3_tab@1x.webp 1x,
+                ./images/barbers/barbers3_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/barbers/barbers3_tab@1x.jpg 1x,
+                ./images/barbers/barbers3_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers3_mob@1x.webp 1x,
+                ./images/barbers/barbers3_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/barbers/barbers3_mob@1x.jpg 1x,
+                ./images/barbers/barbers3_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/barbers/barbers3_tab@1x.jpg"
+              alt="Alan Black"
+              width="450px"
+              height="346px"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Alan Black</h3>
+          <span>Extreme Barber</span>
+          <ul>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+            <li>svg</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <span>In Latin, "barba" means "beard"</span>
+      <h2>hidden</h2>
+      <ul>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio_desc@1x.webp 1x,
+                ./images/portfolio/portfolio_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio_desc@1x.jpg 1x,
+                ./images/portfolio/portfolio_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio_tab@1x.webp 1x,
+                ./images/portfolio/portfolio_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio_tab@1x.jpg 1x,
+                ./images/portfolio/portfolio_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio_mob@1x.webp 1x,
+                ./images/portfolio/portfolio_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio_mob@1x.jpg 1x,
+                ./images/portfolio/portfolio_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/portfolio/portfolio_mob@1x.jpg"
+              alt="Portfolio image"
+              width="418px"
+              height="360px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio2_desc@1x.webp 1x,
+                ./images/portfolio/portfolio2_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio2_desc@1x.jpg 1x,
+                ./images/portfolio/portfolio2_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio2_tab@1x.webp 1x,
+                ./images/portfolio/portfolio2_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio2_tab@1x.jpg 1x,
+                ./images/portfolio/portfolio2_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio2_mob@1x.webp 1x,
+                ./images/portfolio/portfolio2_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio2_mob@1x.jpg 1x,
+                ./images/portfolio/portfolio2_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/portfolio/portfolio2_mob@1x.jpg"
+              alt="Portfolio image"
+              width="418px"
+              height="360px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio3_desc@1x.webp 1x,
+                ./images/portfolio/portfolio3_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio3_desc@1x.jpg 1x,
+                ./images/portfolio/portfolio3_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio3_tab@1x.webp 1x,
+                ./images/portfolio/portfolio3_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio3_tab@1x.jpg 1x,
+                ./images/portfolio/portfolio3_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio3_mob@1x.webp 1x,
+                ./images/portfolio/portfolio3_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio3_mob@1x.jpg 1x,
+                ./images/portfolio/portfolio3_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/portfolio/portfolio3_mob@1x.jpg"
+              alt="Portfolio image"
+              width="418px"
+              height="360px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio4_desc@1x.webp 1x,
+                ./images/portfolio/portfolio4_desc@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/portfolio/portfolio4_desc@1x.jpg 1x,
+                ./images/portfolio/portfolio4_desc@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio4_tab@1x.webp 1x,
+                ./images/portfolio/portfolio4_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/portfolio4_tab@1x.jpg 1x,
+                ./images/portfolio/portfolio4_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio4_mob@1x.webp 1x,
+                ./images/portfolio/portfolio4_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/portfolio4_mob@1x.jpg 1x,
+                ./images/portfolio/portfolio4_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/portfolio/portfolio4_mob@1x.jpg"
+              alt="Portfolio image"
+              width="418px"
+              height="360px"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Online-booking</h2>
+      <form action="">
+        <input type="name" />
+        <input type="number" />
+        <input type="text" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <section>
+      <h2>Contacts</h2>
+      <address>
+        <ul>
+          <li>st. Vasilkovaya, 7A Kiev, 08132</li>
+          <li>+38 044 111 11 11</li>
+          <li>barbershop@email.com</li>
+        </ul>
+        <div>
+          <span>Working hours</span>
+          <p>Every day from 9:00 to 22:00</p>
+        </div>
+      </address>
+    </section>
+    <footer>
+      <a href="">Instagram</a>
+      <a href="">Youtube</a>
+      <span>Copyright 2020</span>
+    </footer> -->
+  </body>
+</html>
