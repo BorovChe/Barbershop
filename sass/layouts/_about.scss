@@ -5,9 +5,9 @@
 
 .about-list-images {
   display: none;
-  min-width: 330px;
 
   @include tablet {
+    min-width: 330px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
