@@ -1,10 +1,14 @@
-@import './base/vars';
-@import './base/reset';
-@import './base/common';
-@import './base/mixin';
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./base/mixin";
 
-@import './components/container';
-@import './components/btn';
+@import "./components/container";
+@import "./components/btn";
+@import "./components/title";
+@import "./components/uppertitle";
+@import "./components/_subtitle.scss";
 
-@import './layouts/header';
-@import './layouts/hero';
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";

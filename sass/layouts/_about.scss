@@ -1,0 +1,59 @@
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list-images {
+  display: none;
+  min-width: 330px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @include desk {
+    flex-wrap: nowrap;
+    min-width: 570px;
+  }
+}
+
+.about-uppertitle {
+  letter-spacing: 0;
+  color: var(--secondary-txt-cl);
+
+  &:before {
+    background-color: var(--secondary-txt-cl);
+  }
+}
+
+.about-title {
+  max-width: 306px;
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.about-text-accent {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+}
+
+.about-text {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+}
+
+.about-btn {
+  color: var(--secondary-txt-cl);
+}

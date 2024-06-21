@@ -3,28 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+
     <title>Barbershop</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="">
-          <svg class="header-logo" width="69" height="56">
+        <a class="header-logo-link" href="">
+          <svg class="header-icons" width="69" height="56">
             <use href="./images/icons/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -37,11 +34,15 @@
           </ul>
         </nav>
         <div class="header-contacts">
-          <a class="header-contacts-link" href="tel:+380441111111"> +38 044 111 11 11 </a>
-          <button class="btn header-contacts-btn" type="button">Online-booking</button>
+          <a class="header-contacts-link" href="tel:+380441111111">
+            +38 044 111 11 11
+          </a>
+          <button class="btn header-contacts-btn" type="button">
+            Online-booking
+          </button>
         </div>
         <button class="btn-menu">
-          <svg class="header-logo" width="24" height="16">
+          <svg class="header-icons" width="24" height="16">
             <use href="./images/icons/sprite.svg#burgerMenu"></use>
           </svg>
         </button>
@@ -50,126 +51,134 @@
     <section class="hero-section">
       <div class="container hero-container">
         <div class="hero-block-left">
-          <a href="">Instagram</a>
-          <a href="">Youtube</a>
+          <ul class="hero-social-list">
+            <li><a class="hero-social-link" href="">Instagram</a></li>
+            <li><a class="hero-social-link" href="">Youtube</a></li>
+          </ul>
         </div>
         <div class="hero-block-right">
           <p class="uppertitle">A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="subtitle">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
           </p>
         </div>
       </div>
     </section>
-    <!-- <section>
-      <ul>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/benefits/benefits_desc@1x.webp 1x,
-                ./images/benefits/benefits_desc@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/benefits/benefits_desc@1x.jpg 1x,
-                ./images/benefits/benefits_desc@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/benefits/benefits_tab@1x.webp 1x,
-                ./images/benefits/benefits_tab@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/benefits/benefits_tab@1x.jpg 1x,
-                ./images/benefits/benefits_tab@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <img
-              src="./images/benefits/benefits_desc@1x.jpg"
-              alt="benefits photo 1"
-              width="270px"
-              height="445px"
-              loading="lazy"
-            />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px )"
-              srcset="
-                ./images/benefits/benefits2_desc@1x.webp 1x,
-                ./images/benefits/benefits2_desc@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/benefits/benefits2_desc@1x.jpg 1x,
-                ./images/benefits/benefits2_desc@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/benefits/benefits2_tab@1x.webp 1x,
-                ./images/benefits/benefits2_tab@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/benefits/benefits2_tab@1x.jpg 1x,
-                ./images/benefits/benefits2_tab@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <img
-              src="./images/benefits/benefits2_desc@1x.jpg"
-              alt="benefits photo 2"
-              width="270px"
-              height="445px"
-              loading="lazy"
-            />
-          </picture>
-        </li>
+    <section>
+      <div class="container about-container">
+        <ul class="about-list-images">
+          <li>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/benefits/benefits_desk@1x.webp 1x,
+                  ./images/benefits/benefits_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/benefits/benefits_desk@1x.jpg 1x,
+                  ./images/benefits/benefits_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/benefits/benefits_tab@1x.webp 1x,
+                  ./images/benefits/benefits_tab@2x.webp 2x
+                "
+                type="image/webp"
+                width="330px"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/benefits/benefits_tab@1x.jpg 1x,
+                  ./images/benefits/benefits_tab@2x.jpg 2x
+                "
+                type="image/jpg"
+                width="330px"
+              />
+              <img
+                src="./images/benefits/benefits_desc@1x.jpg"
+                alt="benefits photo 1"
+                width="270px"
+                height="445px"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 1200px )"
+                srcset="
+                  ./images/benefits/benefits2_desk@1x.webp 1x,
+                  ./images/benefits/benefits2_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/benefits/benefits2_desk@1x.jpg 1x,
+                  ./images/benefits/benefits2_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/benefits/benefits2_tab@1x.webp 1x,
+                  ./images/benefits/benefits2_tab@2x.webp 2x
+                "
+                type="image/webp"
+                width="330px"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/benefits/benefits2_tab@1x.jpg 1x,
+                  ./images/benefits/benefits2_tab@2x.jpg 2x
+                "
+                type="image/jpg"
+                width="330px"
+              />
+              <img
+                src="./images/benefits/benefits2_desc@1x.jpg"
+                alt="benefits photo 2"
+                width="270px"
+                height="445px"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
         <div>
-          <span>About</span>
-          <h2>Best Barbershop in your city</h2>
-          <p>
+          <p class="uppertitle about-uppertitle">About</span>
+          <h2 class="title about-title">Best Barbershop in your city</h2>
+          <p class="about-text-accent">
             If you want to add more confidence to your image, you should visit
             us
           </p>
-          <p>
+          <p class="about-text">
             We are a team that never stops at what has been achieved and are
             thirsty for changes. And when you fall into the hands of our master,
             you will never be the same again. We are a team that is always "on
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button>online-booking</button>
+          <button class="btn about-btn">online-booking</button>
         </div>
-      </ul>
+      </div>
     </section>
-    <section>
+    <!--   <section>
       <span>Spend your time with the best masters</span>
       <h2>Services and prices</h2>
       <ul>
