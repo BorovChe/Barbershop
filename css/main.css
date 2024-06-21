@@ -425,12 +425,14 @@ body {
 @media screen and (min-width: 1200px) {
   .hero-block-right {
     padding: 280px 0 200px 100px;
-    background-image: url(../images/hero/hero_desk@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero_desk@1x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero_desk@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-block-right {
-    background-image: url(../images/hero/hero_desk@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero_desk@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero_desk@2x.jpg);
   }
 }
 
@@ -440,6 +442,11 @@ body {
   font-size: 48px;
   letter-spacing: 0.05em;
   color: var(--light-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+  }
 }
 
 .about-container {
