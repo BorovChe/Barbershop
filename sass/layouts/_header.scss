@@ -46,7 +46,6 @@
 }
 
 .btn-menu {
-  position: absolute;
   width: 40px;
   height: 40px;
   display: flex;
@@ -58,6 +57,10 @@
   @include tablet {
     display: none;
   }
+}
+
+.burgerMenu-icon {
+  position: absolute;
 }
 
 .header-nav {

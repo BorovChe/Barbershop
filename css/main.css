@@ -223,7 +223,6 @@ body {
 }
 
 .btn-menu {
-  position: absolute;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -242,6 +241,10 @@ body {
   .btn-menu {
     display: none;
   }
+}
+
+.burgerMenu-icon {
+  position: absolute;
 }
 
 .header-nav {
