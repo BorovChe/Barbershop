@@ -70,23 +70,36 @@ body {
   color: var(--body-text-color);
 }
 
+.section {
+  padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
 .container {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 448px;
   margin-left: auto;
   margin-right: auto;
-  padding: 84px 15px;
+  padding: 0 15px;
+  outline: 2px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px;
-    padding: 100px 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 120px 15px;
   }
 }
 
@@ -210,6 +223,7 @@ body {
 }
 
 .btn-menu {
+  position: absolute;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -309,6 +323,10 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.hero {
+  padding: 0;
 }
 
 .hero-container {

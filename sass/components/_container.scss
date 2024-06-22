@@ -1,17 +1,16 @@
 .container {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 448px;
   margin-left: auto;
   margin-right: auto;
-  padding: 84px 15px;
+  padding: 0 15px;
+  outline: 2px solid red;
 
   @include tablet {
     max-width: 720px;
-    padding: 100px 15px;
   }
 
   @include desk {
     max-width: 1200px;
-    padding: 120px 15px;
   }
 }
