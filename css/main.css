@@ -117,10 +117,15 @@ body {
   background-color: transparent;
 }
 
+.btn-dark {
+  color: var(--secondary-txt-cl);
+}
+
 .title {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 42px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--secondary-txt-cl);
 }
@@ -136,6 +141,7 @@ body {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--grey-cl-60);
@@ -146,6 +152,15 @@ body {
   width: 60px;
   height: 1px;
   background-color: var(--grey-cl-60);
+}
+
+.uppertitle-dark {
+  letter-spacing: 0;
+  color: var(--secondary-txt-cl);
+}
+.uppertitle-dark:before {
+  content: "";
+  background-color: var(--secondary-txt-cl);
 }
 
 .subtitle {
@@ -161,6 +176,10 @@ body {
     font-size: 18px;
     line-height: 1.7;
   }
+}
+
+.subtitle-dark {
+  color: var(--gray);
 }
 
 .header {
@@ -244,8 +263,7 @@ body {
 }
 
 .burgerMenu-icon {
-  width: 24px;
-  height: 16px;
+  position: absolute;
 }
 
 .header-nav {
@@ -334,7 +352,7 @@ body {
 }
 
 .hero-container {
-  max-width: 480px;
+  max-width: 767px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -515,14 +533,6 @@ body {
   }
 }
 
-.about-uppertitle {
-  letter-spacing: 0;
-  color: var(--secondary-txt-cl);
-}
-.about-uppertitle:before {
-  background-color: var(--secondary-txt-cl);
-}
-
 .about-title {
   max-width: 306px;
   margin-bottom: 20px;
@@ -532,10 +542,7 @@ body {
 
 .about-text-accent {
   margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  color: var(--gray);
+  max-width: 418px;
 }
 
 .about-text {
@@ -546,17 +553,14 @@ body {
   color: var(--gray);
 }
 
-.about-btn {
-  color: var(--secondary-txt-cl);
-}
-
 .price {
   margin-right: auto;
   margin-left: auto;
+  min-width: 320px;
   background-color: var(--dark-bg);
-  background-image: url(../images/priceList/priceList_mob@1x.jpg);
-  background-position: center;
+  background-image: url(../images/priceList/priceList_mob@1x.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -564,12 +568,12 @@ body {
     background-image: url(../images/priceList/priceList_mob@2x.png);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .price {
     background-image: url(../images/priceList/priceList_tab@1x.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .price {
     background-image: url(../images/priceList/priceList_tab@2x.png);
   }
@@ -607,7 +611,7 @@ body {
           flex-direction: column;
   gap: 20px;
   margin-bottom: 44px;
-  padding: 30px 20px 30px 40px;
+  padding: 30px 20px 30px 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
@@ -662,9 +666,9 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  gap: 12px;
+  gap: 8px;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
 }
@@ -679,6 +683,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .price-item {
+    gap: 12px;
     font-size: 18px;
     line-height: 1.6;
   }
@@ -694,4 +699,174 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.benefits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    max-width: 450px;
+  }
+}
+
+.benefits-subtitle {
+  max-width: 418px;
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  .benefits-subtitle {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-left-side {
+    margin-left: auto;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-left-side {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-right-side {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-left-side,
+  .benefits-right-side {
+    width: 570px;
+  }
+}
+
+.benefits-list {
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    width: 370px;
+  }
+}
+
+.benefits-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 194px;
+  min-height: 133px;
+  padding: 20px 36px;
+  background-color: #f7f7f7;
+}
+.benefits-item:nth-child(2n) {
+  margin-top: 30px;
+}
+.benefits-item:nth-child(3) {
+  padding: 20px 54px;
+}
+@media screen and (max-width: 420px) {
+  .benefits-item {
+    width: 160px;
+  }
+  .benefits-item:nth-child(3) {
+    padding: 20px 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    padding: 20px 44px;
+    width: 210px;
+  }
+  .benefits-item:nth-child(3) {
+    padding: 20px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-item {
+    width: 170px;
+    padding: 20px 24px;
+  }
+  .benefits-item:nth-child(3) {
+    padding: 20px 44px;
+  }
+}
+
+.benefits-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--secondary-txt-cl);
+}
+
+.benefits-decor {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  color: var(--secondary-txt-cl);
 }/*# sourceMappingURL=main.css.map */

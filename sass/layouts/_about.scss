@@ -19,15 +19,6 @@
   }
 }
 
-.about-uppertitle {
-  letter-spacing: 0;
-  color: var(--secondary-txt-cl);
-
-  &:before {
-    background-color: var(--secondary-txt-cl);
-  }
-}
-
 .about-title {
   max-width: 306px;
   margin-bottom: 20px;
@@ -38,11 +29,7 @@
 
 .about-text-accent {
   margin-bottom: 20px;
-
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  color: var(--gray);
+  max-width: 418px;
 }
 
 .about-text {
@@ -52,8 +39,4 @@
   line-height: 1.8;
   letter-spacing: 0.02em;
   color: var(--gray);
-}
-
-.about-btn {
-  color: var(--secondary-txt-cl);
 }
