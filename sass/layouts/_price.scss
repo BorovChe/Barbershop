@@ -11,27 +11,27 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/priceList/priceList_mob@2x.png);
+    background-image: url(../images/priceList/priceList_mob@2x.png);
   }
 
   @include tablet {
-    background-image: url(../../images/priceList/priceList_tab@1x.png);
+    background-image: url(../images/priceList/priceList_tab@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/priceList/priceList_tab@2x.png);
+      background-image: url(../images/priceList/priceList_tab@2x.png);
     }
   }
 
   @include desk {
     max-width: 1600px;
-    background-image: url(../../images/priceList/priceList_desk@1x.png);
+    background-image: url(../images/priceList/priceList_desk@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/priceList/priceList_desk@2x.png);
+      background-image: url(../images/priceList/priceList_desk@2x.png);
     }
   }
 }
