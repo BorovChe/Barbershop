@@ -869,4 +869,107 @@ body {
   font-size: 11px;
   text-align: center;
   color: var(--secondary-txt-cl);
+}
+
+.barbers {
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 768px) {
+  .barbers-container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers-container {
+    max-width: 1200px;
+  }
+}
+
+.barbers-title {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.barbers-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.barbers-thumb {
+  margin-bottom: 30px;
+}
+
+.barbersName {
+  margin-bottom: 8px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-cl);
+}
+
+.barbers-subtext {
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: var(--light-color);
+}
+
+.social-icon {
+  fill: var(--secondary-txt-cl);
+}
+.social-icon:hover {
+  fill: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
