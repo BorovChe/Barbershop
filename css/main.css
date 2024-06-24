@@ -182,6 +182,17 @@ body {
   color: var(--gray);
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -972,4 +983,40 @@ body {
 }
 .social-icon:hover {
   fill: var(--accent-color);
+}
+
+.uppertitle-portfolio {
+  margin-bottom: 71px;
+}
+
+.portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-thumb {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-thumb {
+    max-width: 270px;
+  }
 }/*# sourceMappingURL=main.css.map */
