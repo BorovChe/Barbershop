@@ -91,6 +91,7 @@
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--light-color);
+  transition: color var(--anim-fast);
 
   &:hover {
     color: var(--accent-color);
@@ -114,6 +115,11 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--light-color);
+  transition: color var(--anim-fast);
+
+  &:hover {
+    color: var(--accent-color);
+  }
 
   @include tablet {
     position: absolute;

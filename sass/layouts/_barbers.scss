@@ -68,12 +68,13 @@
   justify-content: center;
   border-radius: 50%;
   background-color: var(--light-color);
+
+  &:hover .social-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .social-icon {
   fill: var(--secondary-txt-cl);
-
-  &:hover {
-    fill: var(--accent-color);
-  }
+  transition: fill var(--anim-fast);
 }

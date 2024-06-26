@@ -804,30 +804,84 @@
         </ul>
       </div>
     </section>
-    <!--   <section>
-      <h2>Online-booking</h2>
-      <form action="">
-        <input type="name" />
-        <input type="number" />
-        <input type="text" />
-        <button type="submit">Send</button>
-      </form>
-    </section>
-    <section>
-      <h2>Contacts</h2>
-      <address>
-        <ul>
-          <li>st. Vasilkovaya, 7A Kiev, 08132</li>
-          <li>+38 044 111 11 11</li>
-          <li>barbershop@email.com</li>
-        </ul>
-        <div>
-          <span>Working hours</span>
-          <p>Every day from 9:00 to 22:00</p>
+    <div class="general-block">
+      <section class="section booking">
+        <div class="container booking-container">
+          <h2 class="title booking-title">Online-booking</h2>
+          <form action="" autocomplete="off">
+            <div class="booking-form-group">
+              <label class="booking-form-field" for="">
+                <input
+                  class="booking-form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Name Surname"
+                  required
+                />
+                <span class="booking-form-label">Name*</span>
+              </label>
+              <label class="booking-form-field" for="">
+                <input
+                  class="booking-form-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="380 98 111 11 11"
+                  required
+                />
+                <span class="booking-form-label">Phone*</span>
+              </label>
+            </div>
+            <label class="booking-form-field" for="">
+              <textarea
+                class="booking-form-message"
+                type="text"
+                name="message"
+                rows="5"
+                placeholder="Type your messsage..."
+              ></textarea>
+              <span class="booking-form-label">Message</span>
+            </label>
+            <button class="btn booking-btn" type="submit">Send</button>
+          </form>
         </div>
-      </address>
-    </section>
-    <footer>
+      </section>
+      <section class="section contacts">
+        <div class="container contacts-container">
+          <h2 class="title contacts-title">Contacts</h2>
+          <div class="contacts-block">
+            <address class="contacts-address">
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/sprite.svg#map"></use>
+                  </svg>
+                  <a class="contacts-map" href=""
+                    >st. Vasilkovaya, 7A Kiev, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/sprite.svg#phone"></use>
+                  </svg>
+                  <a class="contacts-phone" href="">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts-item">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/sprite.svg#mail"></use>
+                  </svg>
+                  <a class="contacts-email" href="">barbershop@email.com</a>
+                </li>
+              </ul>
+            </address>
+            <div>
+              <p class="uppertitle contacts-uppertitle">Working hours</p>
+              <p class="contacts-hours">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--    <footer>
       <a href="">Instagram</a>
       <a href="">Youtube</a>
       <span>Copyright 2020</span>

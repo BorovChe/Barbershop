@@ -1,5 +1,6 @@
 .btn {
   min-width: 160px;
+  display: block;
   padding: 10px 18px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
@@ -11,6 +12,11 @@
   text-transform: uppercase;
   color: var(--light-color);
   background-color: transparent;
+  transition: background-color var(--anim-slow);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 
 .btn-dark {
