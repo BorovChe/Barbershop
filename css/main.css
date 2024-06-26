@@ -1247,6 +1247,7 @@ body {
   width: 100%;
   display: block;
   height: 76px;
+  resize: none;
 }
 @media screen and (min-width: 1200px) {
   .booking-form-message {
@@ -1400,4 +1401,90 @@ body {
   line-height: 1.6;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
+}
+
+.footer {
+  padding: 44px 0;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+.footer-social-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-txt-cl);
+}
+@media screen and (min-width: 768px) {
+  .footer-social-list {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--secondary-txt-cl);
+  -webkit-transition: color var(--anim-fast);
+  transition: color var(--anim-fast);
+}
+.footer-social-link:hover {
+  color: var(--accent-color);
+}
+
+.footer-github-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: var(--body-text-color);
+  -webkit-transition: color var(--anim-fast);
+  transition: color var(--anim-fast);
+}
+.footer-github-link:hover {
+  color: var(--accent-color);
+}
+.footer-github-link:hover > .footer-github-icon {
+  fill: var(--accent-color);
+}
+
+.footer-github-icon {
+  -webkit-transition: fill var(--anim-fast);
+  transition: fill var(--anim-fast);
+  fill: var(--body-text-color);
 }/*# sourceMappingURL=main.css.map */

@@ -118,6 +118,7 @@
   width: 100%;
   display: block;
   height: 76px;
+  resize: none;
 
   @include desk {
     width: 570px;
