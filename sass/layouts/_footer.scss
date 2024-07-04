@@ -11,7 +11,7 @@
   }
 }
 
-.footer-social-list {
+.footer-media-list {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -27,18 +27,6 @@
 
   @include tablet {
     margin-bottom: 0;
-  }
-}
-
-.footer-social-link {
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: var(--secondary-txt-cl);
-  transition: color var(--anim-fast);
-
-  &:hover {
-    color: var(--accent-color);
   }
 }
 

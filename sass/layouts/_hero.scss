@@ -34,7 +34,7 @@
   }
 }
 
-.hero-social-list {
+.hero-media-list {
   display: flex;
   align-items: center;
   padding: 0 0 0 40px;
@@ -51,18 +51,6 @@
 
   @include desk {
     transform: rotate(-90deg) translateY(34px);
-  }
-}
-
-.hero-social-link {
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: var(--secondary-txt-cl);
-  transition: color var(--anim-fast);
-
-  &:hover {
-    color: var(--accent-color);
   }
 }
 
