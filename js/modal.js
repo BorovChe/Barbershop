@@ -9,11 +9,13 @@ modalRefs.openModalBtn.forEach(function (btn) {
 function onOpenModal(e) {
   window.addEventListener("keydown", onEscKeyDown);
   document.body.classList.add("show-modal");
+  document.body.style.overflow = "hidden";
 }
 
 function onCloseModal(e) {
   window.removeEventListener("keydown", onEscKeyDown);
   document.body.classList.remove("show-modal");
+  document.body.style.overflow = "";
 }
 
 function onClickBackdrop(e) {

@@ -5,9 +5,14 @@ const modalRefs = {
 };
 
 const menuRefs = {
+  menuNavLink: document.querySelectorAll(".js-menu-nav-link"),
   openMenuBtn: document.querySelector(".js-open-menu"),
   closeMenuBtn: document.querySelector(".js-close-menu"),
   menuBackdrop: document.querySelector(".js-menu-backdrop"),
 };
 
-export { modalRefs, menuRefs };
+const anchors = document.querySelectorAll("a[href*='#']");
+
+const scrollBtn = document.querySelector(".btn-scroll-top");
+
+export { modalRefs, menuRefs, anchors, scrollBtn };

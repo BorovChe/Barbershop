@@ -2,6 +2,12 @@ body.show-menu .menu-backdrop {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  right: 0;
+  transition: opacity var(--anim-slow), visibility var(--anim-slow);
+}
+
+body.show-menu .menu {
+  right: 0;
 }
 
 .menu-backdrop {
@@ -11,22 +17,24 @@ body.show-menu .menu-backdrop {
 
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
   z-index: 5;
 
   background: rgba(25, 28, 38, 0.2);
+  transition: opacity var(--anim-slow), visibility var(--anim-slow);
 }
 
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -337px;
   width: 337px;
   height: 100vh;
   padding: 48px 15px 0 40px;
   background-color: var(--light-color);
+  transition: right var(--anim-slow);
 
   @include tablet {
     display: none;
@@ -48,6 +56,11 @@ body.show-menu .menu-backdrop {
 
 .menu-close-icon {
   fill: var(--secondary-txt-cl);
+  transition: fill var(--anim-slow);
+
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
 .menu-nav-list {
