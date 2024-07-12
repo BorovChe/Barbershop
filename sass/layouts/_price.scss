@@ -3,7 +3,7 @@
   margin-left: auto;
   min-width: 320px;
   background-color: var(--dark-bg);
-  background-image: url(../images/priceList/priceList_mob@1x.png);
+  background-image: url(../images/priceList/priceList_tab@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,7 +11,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/priceList/priceList_mob@2x.png);
+    background-image: url(../images/priceList/priceList_tab@2x.png);
   }
 
   @media screen and (min-width: 480px) {

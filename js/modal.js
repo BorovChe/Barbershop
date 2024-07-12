@@ -1,4 +1,6 @@
-import { modalRefs } from "./refs.js";
+import { bodyRef, modalRefs } from "./refs.js";
+import { onCloseMenu } from "./menu.js";
+import { disableScroll, enableScroll } from "./disableScroll.js";
 
 modalRefs.backdrop.addEventListener("click", onClickBackdrop);
 modalRefs.closeModalBtn.addEventListener("click", onCloseModal);
@@ -8,14 +10,15 @@ modalRefs.openModalBtn.forEach(function (btn) {
 
 function onOpenModal(e) {
   window.addEventListener("keydown", onEscKeyDown);
-  document.body.classList.add("show-modal");
-  document.body.style.overflow = "hidden";
+  bodyRef.classList.add("show-modal");
+  onCloseMenu();
+  disableScroll();
 }
 
 function onCloseModal(e) {
   window.removeEventListener("keydown", onEscKeyDown);
-  document.body.classList.remove("show-modal");
-  document.body.style.overflow = "";
+  bodyRef.classList.remove("show-modal");
+  enableScroll();
 }
 
 function onClickBackdrop(e) {
@@ -25,3 +28,5 @@ function onClickBackdrop(e) {
 function onEscKeyDown(e) {
   if (e.code === "Escape") onCloseModal();
 }
+
+export { onCloseModal };

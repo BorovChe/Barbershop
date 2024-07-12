@@ -1,4 +1,5 @@
-import { menuRefs } from "./refs.js";
+import { bodyRef, menuRefs } from "./refs.js";
+import { disableScroll, enableScroll } from "./disableScroll.js";
 
 menuRefs.openMenuBtn.addEventListener("click", onOpenMenu);
 menuRefs.closeMenuBtn.addEventListener("click", onCloseMenu);
@@ -8,13 +9,17 @@ menuRefs.menuNavLink.forEach(function (link) {
 });
 
 function onOpenMenu(e) {
-  document.body.classList.add("show-menu");
+  bodyRef.classList.add("show-menu");
+  disableScroll();
 }
 
 function onCloseMenu(e) {
-  document.body.classList.remove("show-menu");
+  bodyRef.classList.remove("show-menu");
+  enableScroll();
 }
 
 function onClickBackdrop(e) {
   if (e.currentTarget === e.target) onCloseMenu();
 }
+
+export { onCloseMenu };

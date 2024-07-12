@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icons/favicon.svg" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
@@ -891,6 +892,8 @@
               <label class="booking-form-field">
                 <input
                   class="booking-form-input"
+                  minlength="3"
+                  maxlength="16"
                   type="text"
                   name="name"
                   placeholder="Name Surname"
@@ -901,6 +904,9 @@
               <label class="booking-form-field">
                 <input
                   class="booking-form-input"
+                  minlength="12"
+                  maxlength="12"
+                  pattern="[0-9]*"
                   type="tel"
                   name="phone"
                   placeholder="380 98 111 11 11"
@@ -912,6 +918,7 @@
             <label class="booking-form-field">
               <textarea
                 class="booking-form-message"
+                maxlength="160"
                 type="text"
                 name="message"
                 rows="5"
@@ -1074,6 +1081,8 @@
           <div class="booking-form-group">
             <label class="booking-form-field">
               <input
+                minlength="3"
+                maxlength="16"
                 class="booking-form-input modal-form-input"
                 type="text"
                 name="name"
@@ -1084,6 +1093,9 @@
             </label>
             <label class="booking-form-field">
               <input
+                minlength="12"
+                maxlength="12"
+                pattern="[0-9]*"
                 class="booking-form-input modal-form-input"
                 type="tel"
                 name="phone"
@@ -1098,6 +1110,7 @@
               class="booking-form-message modal-form-message"
               type="text"
               name="message"
+              maxlength="160"
               rows="5"
               placeholder="Type your messsage..."
             ></textarea>
@@ -1111,6 +1124,7 @@
     </div>
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
     <script src="./js/slowScrolling.js" type="module"></script>
     <script src="./js/scrollToTop.js" type="module"></script>
   </body>

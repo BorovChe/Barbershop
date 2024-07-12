@@ -1,3 +1,5 @@
+const bodyRef = document.body;
+
 const modalRefs = {
   openModalBtn: document.querySelectorAll(".js-open-modal"),
   closeModalBtn: document.querySelector('[data-action="close-modal"]'),
@@ -11,8 +13,10 @@ const menuRefs = {
   menuBackdrop: document.querySelector(".js-menu-backdrop"),
 };
 
+const formRefs = document.querySelectorAll(".js-form");
+
 const anchors = document.querySelectorAll("a[href*='#']");
 
 const scrollBtn = document.querySelector(".btn-scroll-top");
 
-export { modalRefs, menuRefs, anchors, scrollBtn };
+export { bodyRef, modalRefs, menuRefs, formRefs, anchors, scrollBtn };
