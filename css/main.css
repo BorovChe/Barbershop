@@ -228,13 +228,22 @@ body {
   color: var(--accent-color);
 }
 
+.scroll-top-container {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .scroll-top-container {
+    bottom: 60px;
+    right: 60px;
+  }
+}
+
 .btn-scroll-top {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,8 +264,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .btn-scroll-top {
-    bottom: 60px;
-    right: 60px;
     width: 58px;
     height: 58px;
   }

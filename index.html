@@ -19,7 +19,7 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header fix-block">
       <div class="container header-container">
         <a class="header-logo-link" href="">
           <svg class="header-icons" width="69" height="56">
@@ -1009,11 +1009,13 @@
         </ul>
       </div>
     </footer>
-    <button class="btn-scroll-top hide-scroll">
-      <svg class="scroll-top-icon" width="24" height="24">
-        <use href="./images/icons/sprite.svg#arrow-top"></use>
-      </svg>
-    </button>
+    <div class="scroll-top-container fix-block">
+      <button class="btn-scroll-top hide-scroll">
+        <svg class="scroll-top-icon" width="24" height="24">
+          <use href="./images/icons/sprite.svg#arrow-top"></use>
+        </svg>
+      </button>
+    </div>
     <div class="menu-backdrop js-menu-backdrop">
       <div class="menu">
         <button class="menu-close-btn js-close-menu">

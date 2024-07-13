@@ -15,8 +15,18 @@ const menuRefs = {
 
 const formRefs = document.querySelectorAll(".js-form");
 
+const fixBlocks = document.querySelectorAll(".fix-block");
+
 const anchors = document.querySelectorAll("a[href*='#']");
 
 const scrollBtn = document.querySelector(".btn-scroll-top");
 
-export { bodyRef, modalRefs, menuRefs, formRefs, anchors, scrollBtn };
+export {
+  bodyRef,
+  modalRefs,
+  menuRefs,
+  formRefs,
+  fixBlocks,
+  anchors,
+  scrollBtn,
+};

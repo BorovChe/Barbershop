@@ -1,11 +1,18 @@
+.scroll-top-container {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+
+  @include tablet {
+    bottom: 60px;
+    right: 60px;
+  }
+}
+
 .btn-scroll-top {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
 
   display: flex;
   align-items: center;
@@ -19,8 +26,6 @@
   transition: opacity var(--anim-slow), visibility var(--anim-slow);
 
   @include tablet {
-    bottom: 60px;
-    right: 60px;
     width: 58px;
     height: 58px;
   }
